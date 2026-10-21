@@ -1,0 +1,43 @@
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.brand-mark {
+    width: 1.15rem;
+    height: 1.15rem;
+    border-radius: 50%;
+    background: orange;
+    flex-shrink: 0;
+}
+
+.brand-name {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--primary);
+}
+
+.f-container {
+    justify-content: space-between;
+}
+
+.f-container .left-side {
+    gap: 1rem;
+}
+
+.f-menu {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+@media (max-width: 640px) {
+    .f-container {
+        flex-direction: column;
+    }
+    .left-side, .right-side {
+        align-items: center;
+    }
+}
